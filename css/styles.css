@@ -1,0 +1,234 @@
+:root {
+  --iris: #4d5ae5;
+  --navyblue: #2e2f42;
+  --white: #ffffff;
+  --cloud: #f4f4fd;
+  --cornflower: #e7e9fc;
+  --slate: #434455;
+  --ocean: #404bbf;
+}
+body {
+  font-family: 'Roboto', sans-serif;
+  color: var(--slate);
+  background-color: #ffffff;
+}
+
+/* portfolio */
+
+header {
+  background: var(--white);
+}
+.section-hero {
+  background: var(--navyblue);
+}
+.list {
+  list-style: none;
+}
+.link {
+  text-decoration: none;
+}
+
+/* Header */
+
+.logo {
+  color: var(--iris);
+  font-size: 18px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 800;
+  line-height: 1.17;
+}
+.logo-two {
+  color: var(--navyblue);
+  font-size: 18px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 800;
+  line-height: 1.17;
+}
+.list-position {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--navyblue, #2e2f42);
+}
+
+.list-position:hover,
+.list-position:focus {
+  color: var(--ocean);
+}
+/* Header address */
+.address-link {
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--slate);
+}
+.address-link:hover,
+.address-link:focus {
+  color: var(--ocean);
+}
+.addr {
+  font-style: normal;
+}
+
+/* buttons  */
+
+.button-name {
+  color: var(--iris);
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  background-color: var(--cloud);
+  cursor: pointer;
+}
+.button-name:hover,
+.button-name:focus {
+  color: var(--white);
+  background-color: var(--ocean);
+}
+/* project  */
+.project-list-text {
+  color: var(--navyblue);
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+}
+.project-list-dscr {
+  color: var(--slate);
+  font-style: normal;
+  line-height: 1.5;
+  font-size: 16px;
+  letter-spacing: 0.02em;
+}
+
+/* index.html */
+
+/* Hero */
+
+.hero-title {
+  color: var(--white);
+  font-size: 56px;
+  font-weight: 700;
+  line-height: 1.07;
+  text-align: center;
+  letter-spacing: 0.02em;
+}
+.hero-btn {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: var(--white);
+  background-color: var(--iris);
+  cursor: pointer;
+}
+.hero-btn:hover,
+.hero-btn:focus {
+  color: var(--white);
+  background-color: var(--ocean, #404bbf);
+}
+
+/* Effective  */
+
+.effective-list-title {
+  color: var(--navyblue);
+  font-family: Roboto;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+}
+.effective-list-dscr {
+  color: var(--slate);
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+}
+
+/*  Advantages */
+
+.advantages-title {
+  color: var(--navyblue);
+  text-align: center;
+  font-size: 36px;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+}
+.adventages-img {
+  border: 1px solid var(--cornflower);
+}
+
+/* Our Team */
+.section-team {
+  background: var(--cloud);
+}
+.team-title {
+  color: var(--navyblue);
+  text-align: center;
+  font-size: 36px;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+}
+.team-list-item {
+  background-color: #ffffff;
+}
+.team-list-subtitle {
+  color: var(--navyblue);
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+}
+.team-list-text {
+  color: var(--slate);
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+}
+
+/* Footer */
+
+.footer {
+  background-color: var(--navyblue);
+}
+
+.logo-footer-one {
+  color: var(--iris);
+  font-family: 'Raleway', sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.logo-footer-two {
+  justify-content: center;
+  color: var(--cloud);
+  font-size: 18px;
+  font-style: normal;
+  line-height: 1.7;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 800;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.footer-dscr {
+  color: var(--cloud);
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+}
