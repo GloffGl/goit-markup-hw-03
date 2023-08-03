@@ -165,25 +165,17 @@ ol {
 .list-project {
   display: flex;
   flex-wrap: wrap;
-  column-gap: 24px;
 }
 .project-list-item {
   width: 360px;
   height: 420px;
-  display: inline-flex;
-  flex-direction: column;
-  align-items: center;
-
+  margin: 0 auto;
   margin-bottom: 48px;
 }
 .project-text {
   border: 1px solid var(--cornflower, #e7e9fc);
+  border-top: none;
   background: var(--white, #fff);
-}
-.project-list-item {
-  display: inline-flex;
-  flex-direction: column;
-  align-items: center;
 }
 .project-item-bottom {
   margin-bottom: 120px;
@@ -195,7 +187,9 @@ ol {
   font-weight: 500;
   line-height: 1.2;
   letter-spacing: 0.02em;
-  margin: 32px 54px 8px 16px;
+  padding-top: 32px;
+  padding-bottom: 8px;
+  padding-left: 16px;
   text-align: left;
 }
 .project-list-dscr {
@@ -206,12 +200,8 @@ ol {
   letter-spacing: 0.02em;
   text-align: left;
   margin: 0 auto;
-  margin-left: 16px;
-  margin-bottom: 32px;
-}
-.project-text {
-  border: 1px solid var(--cornflower, #e7e9fc);
-  background: var(--white, #fff);
+  padding-left: 16px;
+  padding-bottom: 32px;
 }
 
 /* index.html */
@@ -336,11 +326,6 @@ ol {
   box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
     0px 1px 1px 0px rgba(46, 47, 66, 0.16),
     0px 1px 6px 0px rgba(46, 47, 66, 0.08);
-  display: inline-flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background-color: #ffffff;
 }
 
 .team-list-subtitle {
