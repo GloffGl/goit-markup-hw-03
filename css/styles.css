@@ -7,6 +7,18 @@
   --slate: #434455;
   --ocean: #404bbf;
 }
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
 body {
   font-family: 'Roboto', sans-serif;
   color: var(--slate);
@@ -114,8 +126,40 @@ ol {
 .addr {
   font-style: normal;
 }
+/* PORTFOLIO */
 
 /* buttons  */
+.list-btn {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  padding-top: 96px;
+  padding-bottom: 72px;
+  justify-content: center;
+}
+.list-project {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 24px;
+}
+.project-list-item {
+  width: 360px;
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid var(--cornflower, #e7e9fc);
+  background: var(--white, #fff);
+  margin-bottom: 48px;
+}
+
+.project-list-item {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+}
+.project-item-bottom {
+  margin-bottom: 120px;
+}
 
 .button-name {
   color: var(--iris);
@@ -128,6 +172,11 @@ ol {
   letter-spacing: 0.04em;
   background-color: var(--cloud);
   cursor: pointer;
+  padding: 12px 24px;
+  border-radius: 4px;
+  background: var(--cloud, #f4f4fd);
+  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12),
+    0px 2px 1px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.1);
 }
 .button-name:hover,
 .button-name:focus {
@@ -142,6 +191,8 @@ ol {
   font-weight: 500;
   line-height: 1.2;
   letter-spacing: 0.02em;
+  margin: 32px 54px 8px 16px;
+  text-align: left;
 }
 .project-list-dscr {
   color: var(--slate);
@@ -149,6 +200,10 @@ ol {
   line-height: 1.5;
   font-size: 16px;
   letter-spacing: 0.02em;
+  text-align: left;
+  margin: 0 auto;
+  margin-left: 16px;
+  margin-bottom: 32px;
 }
 
 /* index.html */
@@ -239,7 +294,7 @@ ol {
 .section-advantages .list {
   display: flex;
   flex-shrink: 0;
-  gap: 24px;
+  column-gap: 24px;
   margin-bottom: 120px;
 }
 .adventages-list-img {
@@ -260,13 +315,7 @@ ol {
   padding-top: 120px;
   padding-bottom: 72px;
 }
-.team-list-subtitle {
-  padding: 32px 49px 8px 49px;
-}
-.team-list-text {
-  padding: 0 49px 32px 49px;
-  margin: 0 0;
-}
+
 .section-team .list {
   display: flex;
   gap: 24px;
@@ -278,6 +327,7 @@ ol {
   justify-content: center;
   align-items: center;
 }
+
 .team-list-item {
   background-color: #ffffff;
 }
@@ -288,12 +338,14 @@ ol {
   line-height: 1.2;
   letter-spacing: 0.02em;
   text-align: center;
+  margin: 32px 49px 8px 49px;
 }
 .team-list-text {
   color: var(--slate);
   line-height: 1.5;
   letter-spacing: 0.02em;
   text-align: center;
+  margin: 0 49px 32px 49px;
 }
 
 /* Footer */
