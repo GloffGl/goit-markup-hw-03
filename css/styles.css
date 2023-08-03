@@ -12,22 +12,54 @@ body {
   color: var(--slate);
   background-color: #ffffff;
 }
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+ul,
+ol {
+  margin: 0;
+  padding-left: 0;
+}
+.container {
+  width: 1158px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
 
 /* portfolio */
+.nav {
+  display: inline-flex;
+  align-items: center;
+  padding: 0;
+  margin: 0 auto;
+}
 
-header {
+.header {
   background: var(--white);
+  border-bottom: 1px solid var(--cornflower, #e7e9fc);
+  width: 1158px;
+  margin: 0 auto;
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
-.section-hero {
-  background: var(--navyblue);
-}
+
 .list {
   list-style: none;
 }
 .link {
   text-decoration: none;
 }
-
 /* Header */
 
 .logo {
@@ -38,16 +70,12 @@ header {
   font-family: 'Raleway', sans-serif;
   font-weight: 800;
   line-height: 1.17;
+  margin-right: 76px;
 }
 .logo-two {
   color: var(--navyblue);
-  font-size: 18px;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  font-family: 'Raleway', sans-serif;
-  font-weight: 800;
-  line-height: 1.17;
 }
+
 .list-position {
   font-weight: 500;
   font-size: 16px;
@@ -56,16 +84,28 @@ header {
   color: var(--navyblue, #2e2f42);
 }
 
+.nav-list-item:nth-last-child(n + 2) {
+  margin-right: 40px;
+}
+
 .list-position:hover,
 .list-position:focus {
   color: var(--ocean);
 }
+
 /* Header address */
 .address-link {
   font-style: normal;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--slate);
+}
+.address-item {
+  flex-shrink: 0;
+}
+.address-item:nth-last-child(n + 2) {
+  margin-left: 332px;
+  margin-right: 40px;
 }
 .address-link:hover,
 .address-link:focus {
@@ -114,7 +154,11 @@ header {
 /* index.html */
 
 /* Hero */
-
+.section-hero {
+  background: var(--navyblue);
+  display: block;
+  flex-shrink: 0;
+}
 .hero-title {
   color: var(--white);
   font-size: 56px;
@@ -122,6 +166,15 @@ header {
   line-height: 1.07;
   text-align: center;
   letter-spacing: 0.02em;
+  width: 496px;
+  padding-bottom: 48px;
+  margin: 0 auto;
+}
+
+.section-hero {
+  padding-bottom: 188px;
+  padding-top: 188px;
+  margin-bottom: 120px;
 }
 .hero-btn {
   font-family: 'Roboto', sans-serif;
@@ -131,8 +184,14 @@ header {
   letter-spacing: 0.04em;
   color: var(--white);
   background-color: var(--iris);
+  border-radius: 4px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
   cursor: pointer;
+  margin: 0 auto;
+  display: block;
+  padding: 16px 32px;
 }
+
 .hero-btn:hover,
 .hero-btn:focus {
   color: var(--white);
@@ -154,7 +213,18 @@ header {
   line-height: 1.5;
   letter-spacing: 0.02em;
 }
-
+.effective-item {
+  display: flex;
+  width: 264px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+}
+.section-effective .container .list {
+  display: flex;
+  gap: 24px;
+  margin-bottom: 120px;
+}
 /*  Advantages */
 
 .advantages-title {
@@ -164,15 +234,22 @@ header {
   line-height: 1.11;
   letter-spacing: 0.02em;
   text-transform: capitalize;
+  margin-bottom: 72px;
 }
-.adventages-img {
+.section-advantages .list {
+  display: flex;
+  flex-shrink: 0;
+  gap: 24px;
+  margin-bottom: 120px;
+}
+.adventages-list-img {
   border: 1px solid var(--cornflower);
 }
-
 /* Our Team */
 .section-team {
   background: var(--cloud);
 }
+
 .team-title {
   color: var(--navyblue);
   text-align: center;
@@ -180,6 +257,26 @@ header {
   line-height: 1.11;
   letter-spacing: 0.02em;
   text-transform: capitalize;
+  padding-top: 120px;
+  padding-bottom: 72px;
+}
+.team-list-subtitle {
+  padding: 32px 49px 8px 49px;
+}
+.team-list-text {
+  padding: 0 49px 32px 49px;
+  margin: 0 0;
+}
+.section-team .list {
+  display: flex;
+  gap: 24px;
+  padding-bottom: 120px;
+}
+.team-list-item {
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 .team-list-item {
   background-color: #ffffff;
@@ -190,17 +287,25 @@ header {
   font-weight: 500;
   line-height: 1.2;
   letter-spacing: 0.02em;
+  text-align: center;
 }
 .team-list-text {
   color: var(--slate);
   line-height: 1.5;
   letter-spacing: 0.02em;
+  text-align: center;
 }
 
 /* Footer */
 
+.footer-logo {
+  padding-top: 101.5px;
+  padding-bottom: 17.5px;
+}
 .footer {
   background-color: var(--navyblue);
+  margin: 0 auto;
+  padding: 0;
 }
 
 .logo-footer-one {
@@ -231,4 +336,6 @@ header {
   color: var(--cloud);
   line-height: 1.5;
   letter-spacing: 0.02em;
+  width: 264px;
+  padding-bottom: 100px;
 }
