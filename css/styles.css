@@ -69,7 +69,7 @@ ol {
 }
 .nav {
   display: flex;
-  align-items: baseline;
+  align-items: center;
 }
 .nav-list {
   display: flex;
